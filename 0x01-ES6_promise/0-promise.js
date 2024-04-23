@@ -5,6 +5,3 @@ function getResponseFromAPI() {
 
   return myPromise;
 }
-
-const obj = getResponseFromAPI();
-console.log(obj instanceof Promise);
