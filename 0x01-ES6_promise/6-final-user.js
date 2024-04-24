@@ -1,14 +1,7 @@
 import signUpUser from './4-user-promise';
 import uploadPhoto from './5-photo-reject';
 
-/**
- * handleProfileSignup - Handles the profile signup process
- * @param {string} firstName - First name of the user
- * @param {string} lastName - Last name of the user
- * @param {string} fileName - Name of the file to be uploaded
- * @returns {Promise} - Promise resolves to an array with the profile info / rejects with an error
- */
-export default function handleProfileSignup(firstName, lastName, fileName) {
+export default async function handleProfileSignup(firstName, lastName, fileName) {
   const userPromise = signUpUser(firstName, lastName);
   const photoPromise = uploadPhoto(fileName);
 
@@ -29,3 +22,6 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
       }
     });
 }
+
+console.log(handleProfileSignup("Bob", "Dylan", "bob_dylan.jpg"));
+// Output: Promise { <pending> }
