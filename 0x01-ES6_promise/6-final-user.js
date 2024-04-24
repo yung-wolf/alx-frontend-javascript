@@ -22,6 +22,3 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
       }
     });
 }
-
-console.log(handleProfileSignup("Bob", "Dylan", "bob_dylan.jpg"));
-// Output: Promise { <pending> }
