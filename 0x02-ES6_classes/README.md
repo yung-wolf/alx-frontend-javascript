@@ -28,8 +28,9 @@ $ npm -v
 
 ## Configuration files
 Add the following files to your project directory.
-
-file: package.json
+```diff
+- file: package.json
+```
 ```
 {
   "scripts": {
@@ -52,7 +53,9 @@ file: package.json
 }
 ```
 
-file: babel.config.js
+```diff
+- file: babel.config.js
+```
 ```
 module.exports = {
   presets: [
@@ -68,7 +71,9 @@ module.exports = {
 };
 ```
 
-file: .eslintrc.js
+```diff
+- file: .eslintrc.js
+```
 ```
 module.exports = {
   env: {
