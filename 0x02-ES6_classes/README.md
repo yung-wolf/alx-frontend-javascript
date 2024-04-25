@@ -29,9 +29,8 @@ $ npm -v
 ## Configuration files
 Add the following files to your project directory.
 ```diff
-- file: package.json
-```
-```
+- file: package.json:
+
 {
   "scripts": {
     "lint": "./node_modules/.bin/eslint",
@@ -54,9 +53,8 @@ Add the following files to your project directory.
 ```
 
 ```diff
-- file: babel.config.js
-```
-```
+- file: babel.config.js:
+
 module.exports = {
   presets: [
     [
@@ -72,9 +70,8 @@ module.exports = {
 ```
 
 ```diff
-- file: .eslintrc.js
-```
-```
+- file: .eslintrc.js:
+
 module.exports = {
   env: {
     browser: false,
