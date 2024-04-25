@@ -29,7 +29,7 @@ $ npm -v
 ## Configuration files
 Add the following files to your project directory.
 
-file: package.json
+<span style="color:red">file: package.json</span>
 ```
 {
   "scripts": {
