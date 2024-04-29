@@ -1,3 +1,7 @@
+/**
+ * getListStudents
+ * @returns {Array} - An array of objects
+ */
 export default function getListStudents() {
   const student1 = {
     id: 1,
@@ -17,5 +21,3 @@ export default function getListStudents() {
 
   return [student1, student2, student3];
 }
-
-console.log(getListStudents());
