@@ -18,7 +18,7 @@ export default function getListStudents() {
   const student3 = {
     id: 5,
     firstName: 'Serena',
-    location: ' San Francisco',
+    location: 'San Francisco',
   };
 
   classroom.push(student1);
