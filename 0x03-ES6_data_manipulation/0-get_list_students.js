@@ -3,6 +3,8 @@
  * @returns {Array} - An array of objects
  */
 export default function getListStudents() {
+  const classroom = [];
+
   const student1 = {
     id: 1,
     firstName: 'Guillaume',
@@ -19,5 +21,9 @@ export default function getListStudents() {
     location: ' San Francisco',
   };
 
-  return [student1, student2, student3];
+  classroom.push(student1);
+  classroom.push(student2);
+  classroom.push(student3);
+
+  return Array.from(classroom);
 }
