@@ -15,7 +15,7 @@ export default function cleanSet(setArg, strArg) {
 
   // return if strArg is empty
   if (strArg === '') {
-    return '';
+    return ' ';
   }
 
   const setArgToArray = Array.from(setArg);
