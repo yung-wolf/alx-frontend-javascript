@@ -11,7 +11,17 @@ interface Directors extends Teacher {
   numberOfReports: number;
 }
 
-// Override console.log to print the desired format
+interface printTeacherFunction {
+  firstName: string;
+  lastName: string;
+}
+
+function printTeacher(firstName: string, lastName: string): string {
+  return `${firstName.charAt(0)}. ${lastName}`;
+}
+
+// First copy built-in console.log function to a variable (originalConsoleLog)
+// Then override console.log to print the desired format
 const originalConsoleLog = console.log;
 console.log = function(...args: any[]): void {
   if (args.length === 1 && typeof args[0] === 'object' && args[0] !== null) {
