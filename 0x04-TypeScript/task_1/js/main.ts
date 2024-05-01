@@ -16,8 +16,38 @@ interface printTeacherFunction {
   lastName: string;
 }
 
+interface StudentInterface {
+  firstName: string;
+  lastName: string;
+  workOnHomework(): string;
+  displayName(): string;
+}
+
+interface StudentConstructor {
+  firstName: string;
+  lastName: string;
+}
+
 function printTeacher(firstName: string, lastName: string): string {
   return `${firstName.charAt(0)}. ${lastName}`;
+}
+
+class StudentClass implements StudentInterface{
+  firstName: string;
+  lastName: string;
+
+  constructor({ firstName, lastName }: StudentConstructor) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  workOnHomework(): string {
+    return 'Currently working';
+  }
+
+  displayName(): string {
+    return this.firstName;
+  }
 }
 
 // First copy built-in console.log function to a variable (originalConsoleLog)
