@@ -7,14 +7,9 @@ interface Teacher {
   [key: string]: any;
 }
 
-const teacher3: Teacher = {
-  firstName: 'John',
-  lastName: 'Doe',
-  fullTimeEmployee: false,
-  yearsOfExperience: 3,
-  location: 'London',
-  contract: false,
-};
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
 
 // Override console.log to print the desired format
 const originalConsoleLog = console.log;
@@ -29,5 +24,3 @@ console.log = function(...args: any[]): void {
     originalConsoleLog(...args);
   }
 };
-
-console.log(teacher3);
